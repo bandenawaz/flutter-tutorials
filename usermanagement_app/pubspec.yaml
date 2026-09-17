@@ -1,0 +1,43 @@
+name: usermanagement_app
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.3+2 # SQLite Plugin Link https://pub.dev/packages/sqflite
+  path: ^1.8.0
+  path_provider: ^2.1.1
+  flutter_native_splash: ^2.4.1
+  fluttertoast: ^8.2.8
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  
+
+flutter:
+  assets:
+    - assets/images/splash_logo.png
+
+  uses-material-design: true
+
+  
+flutter_native_splash:
+  color: "#42a5f5"
+  android: true
+  ios: true
