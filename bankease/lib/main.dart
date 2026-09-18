@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bankease/app/theme.dart';
 
 void main() {
   runApp(const BankEaseApp());
@@ -11,7 +12,7 @@ class BankEaseApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'BankEase',
-      theme: ThemeData(colorSchemeSeed: const Color(0xFF0E6B5C)),
+      theme: AppTheme.light,
       home: const HomeScreen(),
     );
   }
